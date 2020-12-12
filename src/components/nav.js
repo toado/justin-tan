@@ -5,7 +5,7 @@ class Nav extends Component {
         return (
             <div className="info">
                 <h3 className="link">
-                    <a class="links hover" href="../personal/resume.pdf"> {">"} resume</a>
+                    <a class="links hover" href="justin-tan/personal/resume.pdf"> {">"} resume</a>
                 </h3>
             </div>
         );

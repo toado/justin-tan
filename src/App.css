@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+
+@font-face {
+  font-family: 'Playfair Display', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+} 
+
+
+body {
+  margin:0;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
+  font-family: Montserrat;
+}
+
+.view {
+  display: flex;
+}
+
+.pad {
+  flex-grow: 5;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 6em;
+  max-width: 520px;
+}
+
+.view Header {
+  flex-grow: 1;
+}
+
+.about {
+  font-family: 'Montserrat';
+  color: rgba(51,51,51,.6);
+  margin-top: 8%;
+  font-size: 1.17em;
+  line-height: 1.45em;
+}
+
+.emoji {
+  color: black;
+}
+
+.about-text {
+  text-decoration: none;
+  color: #000;
+}
+
+.hover:hover {
+  background-color: #feeba9;
+}
+
+.info {
+  display: flex;
+}
+
+.links {
+  margin-top: 1em;
+  margin-bottom: 10em;
+  color: rgba(51,51,51,.9);
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.links .hover:hover {
+  background-color: #feeba9;
+}
+
+.socials {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: inherit;
+  margin-top: 8%;
+  height: 3em;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.social-item {
+  margin-top: 0;
+  opacity: .75;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-item img {
+  width: 80%;
 }

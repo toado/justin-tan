@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Resume from '../documents/resume.pdf'
+import Resume from '../../documents/resume.pdf'
 
 class Nav extends Component {
     render() {
